@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+a:hover{
+    color: #db1616;
+    text-decoration: underline;
+}
+.header{
+    padding: 10px 15px;
+    display: flex;
+    font-size: 14px;
+    color: #f1eded;
+    border-bottom: 1px solid rgba(185, 185, 185, 0.5);
+    background-color: #333;
+}
+.header a{
+    color: #f7f7f7;
+}
+.header a:hover{
+    color: #f03535;
+}
+.header .title{
+    flex: 1;
+    font-weight: bold;
+}
+.header .switch{
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+.header .switch:hover{
+    color: #f32c2c;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+.container ul{
+    flex: 1;
+    list-style-type: decimal;
+    padding: 0;
+    margin: 0 30px;
+}
+.container ul li{
+    margin: 0 10px;
+    padding: 5px 0;
+}
+.container ul li:hover{
+    background-color: rgba(102, 102, 102, 0.1);
+}
+.container ul li .info{
+    display: flex;
+}
+.container ul li .info .name{
+    flex: 1;
+}
+.container ul li .info .name a{
+    color: #333;
+}
+.container ul li .info .time{
+    width: 200px;
+    text-align: center;
+}
+.container ul li .info .size{
+    width: 100px;
+    text-align: center;
+}
+.container .item{
+    display: block;
+    width: 100px;
+    height: 120px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.container .item:hover{
+    background-color: rgba(200, 200, 200, 0.2);
+    text-decoration: none;
+}
+.container .item .thumb{
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .item .thumb:hover{
+    opacity: 0.8;
+}
+.container .item .dir{
+    background-image: url(../images/folder.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.container .item .file{
+    background-image: url(../images/file.png);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+.container .item img{
+    object-fit: scale-down;
+}
+.container .item .name{
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    word-break: break-all;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
